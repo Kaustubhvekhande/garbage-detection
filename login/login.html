@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login_styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Login</h1>
+            <nav>
+                <a href="../index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="login-form">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="userType">Login as:</label>
+                <select id="userType" name="userType">
+                    <option value="administrator">Administrator</option>
+                    <option value="worker">Worker</option>
+                </select>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact Information | Social Media Links | Project Partners</p>
+    </footer>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var userType = document.getElementById('userType').value;
+
+            // Perform basic client-side validation
+            if (username && password) {
+                // Redirect based on user type (for demo purposes, adjust as needed)
+                if (userType === 'administrator') {
+                    window.location.href = 'admin_dashboard.html';
+                } else if (userType === 'worker') {
+                    window.location.href = 'workers_dashboard.html';
+                } else {
+                    alert('Invalid user type selected.');
+                }
+            } else {
+                alert('Please enter both username and password.');
+            }
+        });
+    </script>
+</body>
+</html>

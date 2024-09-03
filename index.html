@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Garbage Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Real-Time Garbage Detection</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="/worker dashboard/workers_dashboard.html">Worker Dashboard</a>
+                <a href="login/login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Report Garbage</a></li>
+                <li><a href="#">Volunteer</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section class="hero">
+                <h2>Track and Manage Waste Levels in Your City</h2>
+                <p>Our system provides real-time data on garbage levels across various areas. Stay informed and help us keep the city clean.</p>
+            </section>
+            <section class="map">
+                <h3>Map Display</h3>
+                <div id="map"></div>
+            </section>
+            <section class="stats">
+                <h3>Statistics</h3>
+                <p>Total waste collected, areas with high, medium, and low garbage levels.</p>
+                <!-- Add detailed statistics here -->
+                <section class="sidebar-graph">
+                    <h3>Waste Statistics</h3>
+                    <canvas id="sidebarChart"></canvas>
+                </section>
+            </section>
+            <section class="community">
+                <h3>Community Involvement</h3>
+                <p>Report garbage issues and get involved in community clean-up efforts.</p>
+                <button>Report Garbage</button>
+                <button>Volunteer</button>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Contact Information | Social Media Links | Project Partners</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
