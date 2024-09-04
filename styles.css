@@ -33,14 +33,26 @@ header .container {
 
 .logo img {
     border-radius: 50%; /* Rounded logo */
+<<<<<<< HEAD
+    height: 80px; /* Slightly smaller size */
+    width: 80px; /* Maintain aspect ratio */
+=======
      /* Maintain aspect ratio */
+<<<<<<< HEAD
     
+=======
+>>>>>>> b55af3e813c5542587602f1083a9028a9757782a
+>>>>>>> 9dfe9c877ce6a3d8a299b4bfc975758c932504d1
     object-fit: cover; /* Ensure image fits well within the circle */
 }
 
 .logo h1 {
     margin: 0;
+<<<<<<< HEAD
+    font-size: 24px; /* Adjust font size */
+=======
     font-size: 30px; /* Adjust font size */
+>>>>>>> b55af3e813c5542587602f1083a9028a9757782a
     color: #fff; /* Ensure the text is visible on dark background */
 }
 
