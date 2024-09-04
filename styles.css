@@ -34,6 +34,7 @@ header .container {
 .logo img {
     border-radius: 50%; /* Rounded logo */
      /* Maintain aspect ratio */
+    
     object-fit: cover; /* Ensure image fits well within the circle */
 }
 
