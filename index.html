@@ -5,20 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real-Time Garbage Detection</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
     <header>
-        <div class="container">
-            <h1>Real-Time Garbage Detection</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="/worker dashboard/workers_dashboard.html">Worker Dashboard</a>
-                <a href="login/login.html">Login</a>
-            </nav>
-        </div>
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <div class="logo">               <img src="./images/logo.jpeg" alt="Logo"  height="80px" width="80px" style="border-radius: 40px;" class="d-inline-block align-text-top">
+                <h1 style="color:#f4f4f4;">स्वच्छscan</h1>
+            </div>
+              </a>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./worker_dashboard/workers_dashboard.html">Worker Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="login/login.html">Login</a>
+                </li>
+                
+              </ul>
+            </div>
+            
+          </nav>
     </header>
     <div class="main-container">
         <aside class="sidebar">
@@ -31,7 +45,6 @@
                 <li><a href="#">Volunteer</a></li>
             </ul>
         </aside>
-
         <main>
             <section class="hero">
                 <h2>Track and Manage Waste Levels in Your City</h2>
@@ -44,7 +57,6 @@
             <section class="stats">
                 <h3>Statistics</h3>
                 <p>Total waste collected, areas with high, medium, and low garbage levels.</p>
-                <!-- Add detailed statistics here -->
                 <section class="sidebar-graph">
                     <h3>Waste Statistics</h3>
                     <canvas id="sidebarChart"></canvas>

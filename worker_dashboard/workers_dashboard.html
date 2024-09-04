@@ -11,7 +11,7 @@
     <header>
         <div class="container"  >
             <h1>Sanitation Workers Dashboard</h1>
-            <a class= "white" href="/index.html">Back to Home</a>
+            <a class= "white" href="index.html">Back to Home</a>
             <a class= "white" href="#">Logout</a>
         </div>
     </header>
@@ -70,7 +70,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             var ctx = document.getElementById('sidebarChart').getContext('2d');
             var sidebarChart = new Chart(ctx, {
-                type: 'bar',
+                type: 'histogram',
                 data: {
                     labels: ['Task 1', 'Task 2', 'Task 3', 'Task 4'],
                     datasets: [{

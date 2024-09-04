@@ -6,12 +6,16 @@ body {
     padding: 0;
 }
 
-header {
+.navbar {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
 }
-
+.navbar h1{
+    
+    display: flex;
+    
+}
 header .container {
     display: flex;
     justify-content: space-between; /* Space out logo and navigation */
@@ -29,14 +33,22 @@ header .container {
 
 .logo img {
     border-radius: 50%; /* Rounded logo */
+<<<<<<< HEAD
     height: 80px; /* Slightly smaller size */
     width: 80px; /* Maintain aspect ratio */
+=======
+     /* Maintain aspect ratio */
+>>>>>>> b55af3e813c5542587602f1083a9028a9757782a
     object-fit: cover; /* Ensure image fits well within the circle */
 }
 
 .logo h1 {
     margin: 0;
+<<<<<<< HEAD
     font-size: 24px; /* Adjust font size */
+=======
+    font-size: 30px; /* Adjust font size */
+>>>>>>> b55af3e813c5542587602f1083a9028a9757782a
     color: #fff; /* Ensure the text is visible on dark background */
 }
 
