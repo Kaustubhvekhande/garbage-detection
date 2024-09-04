@@ -1,35 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
+.navbar {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
 }
-
+.navbar h1{
+    
+    display: flex;
+    
+}
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space out logo and navigation */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    color: aliceblue;
 }
-.container a{
-    color: white;
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between image and text */
 }
-header h1 {
+
+.logo img {
+    border-radius: 50%; /* Rounded logo */
+     /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image fits well within the circle */
+}
+
+.logo h1 {
     margin: 0;
+    font-size: 30px; /* Adjust font size */
+    color: #fff; /* Ensure the text is visible on dark background */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between nav items */
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #ddd; /* Lighter color on hover */
 }
 
 .main-container {
@@ -40,6 +68,7 @@ nav a {
     width: 250px;
     background-color: #f4f4f4;
     padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .sidebar h2 {
@@ -58,6 +87,12 @@ nav a {
 .sidebar ul li a {
     text-decoration: none;
     color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #007bff; /* Change color on hover */
 }
 
 main {
@@ -69,15 +104,19 @@ main {
     background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
+    border-radius: 8px; /* Rounded corners for the hero section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.map, .stats, .community, .tasks, .upload {
+.map, .stats, .community {
     margin: 20px 0;
 }
 
 #map, #worker-map {
     height: 400px;
     width: 100%;
+    border-radius: 8px; /* Rounded corners for map */
+    overflow: hidden; /* Ensure map fits within rounded corners */
 }
 
 footer {
@@ -86,6 +125,7 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
 .sidebar-graph {
     margin-top: 20px;
     padding: 10px;
@@ -102,5 +142,5 @@ footer {
 
 #sidebarChart {
     width: 100%;
-    height: 200px; /* Adjust height if needed */
+    height: 200px;
 }
